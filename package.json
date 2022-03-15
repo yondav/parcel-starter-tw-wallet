@@ -1,6 +1,6 @@
 {
   "name": "@ydstarters/parcel-starter-tw-wallet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tailwind starter using parcel, tailwind and twin.macro with wallet connection supporting ethereum",
   "main": "index.js",
   "bin": "./bin/cli.js",

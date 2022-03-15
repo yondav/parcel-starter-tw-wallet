@@ -13,7 +13,7 @@ const runCommand = command => {
 };
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/yondav/parcel-starter-tw.git ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/yondav/parcel-starter-tw-wallet.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn install`;
 
 console.log(`Cloning repository named ${repoName}`);
