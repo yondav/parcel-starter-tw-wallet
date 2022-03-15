@@ -1,6 +1,6 @@
 {
   "name": "@ydstarters/parcel-starter-tw-wallet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tailwind starter using parcel, tailwind and twin.macro with wallet connection supporting ethereum",
   "main": "index.js",
   "bin": "./bin/cli.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yondav/parcel-starter-tw-wallet.git"
+    "url": ""
   },
   "keywords": [],
   "author": "Yoni David",

@@ -15,6 +15,7 @@ const runCommand = command => {
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/yondav/parcel-starter-tw-wallet.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn install`;
+const removeGit = `cd ${repoName} && rm -rf .git`;
 
 console.log(`Cloning repository named ${repoName}`);
 
@@ -27,6 +28,10 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 
 if (!installedDeps) process.exit();
+
+const removedGit = runCommand(removeGit);
+
+if (!removedGit) process.exit();
 
 console.log('Starter installed!');
 console.log(`cd ${repoName} && yarn start`);
