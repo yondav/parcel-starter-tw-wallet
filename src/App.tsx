@@ -1,6 +1,9 @@
 import React from 'react';
 import tw, { styled, css } from 'twin.macro';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import WalletConnect from './components/Button/WalletConnect';
 
 const Wrapper = styled.main`
@@ -27,6 +30,7 @@ const App = () => {
         </h2>
       </div>
       <WalletConnect />
+      <ToastContainer position='bottom-right' theme={'dark'} />
     </Wrapper>
   );
 };

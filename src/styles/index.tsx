@@ -37,6 +37,15 @@ a {
   ${tw`text-purple-500 hover:text-yellow-500 transition-all duration-300 ease-in`}
   text-decoration: none;
 }
+
+.Toastify__progress-bar {
+  ${tw`bg-purple-700 bg-gradient-to-l	from-yellow-500 via-purple-600 via-yellow-600 to-purple-700`}
+}
+
+.Toastify__toast {
+  ${tw`bg-gray-900`}
+  box-shadow: 0 6px 30px 0 rgba(126 34 206 / 0.1), 0 -4px 25px -1px rgb(126 34 206 / 0.1);
+}
 `;
 
 const GlobalStyles = () => (
@@ -47,3 +56,5 @@ const GlobalStyles = () => (
 );
 
 export default GlobalStyles;
+
+//312e81

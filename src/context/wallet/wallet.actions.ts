@@ -82,7 +82,7 @@ export default function useWeb3Modal() {
     provider.on('disconnect', () => resetApp());
     provider.on('accountsChanged', async (accounts: string[]) => {
       await dispatch({ type: 'ADDRESS_CHANGE', payload: { address: accounts[0] } });
-      toast('Account Changed');
+      toast('Changing accounts');
     });
 
     provider.on('chainChanged', async (chainId: number) => {
@@ -127,7 +127,7 @@ export default function useWeb3Modal() {
           showModal: true,
         },
       });
-      toast('Connected');
+      toast('Connecting');
     }
   };
 
@@ -135,6 +135,7 @@ export default function useWeb3Modal() {
     console.log(modal);
     await modal.resetState();
     dispatch({ type: 'RESET_APP', payload: INITIAL_STATE });
+    toast('Disconnecting');
   };
 
   return { onConnect, disconnectWallet, state };
